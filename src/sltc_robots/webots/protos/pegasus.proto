@@ -1,0 +1,145 @@
+#VRML_SIM R2023a utf8
+  PROTO pegasus [
+
+  ]
+  {
+Robot {
+  translation -0.131104 0.12889 0.044
+  rotation 0 1 0 0
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 1.1711739840873185e-06
+      }
+      device [
+        RotationalMotor {
+          name "right_rear_wheel"
+        }
+      ]
+      endPoint Solid {
+        translation 0.04599999999999996 0.07103665720743978 -0.01583645581538936
+        rotation 1 0 0 1.5730991705192117
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.0275
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.8740606338181605e-07
+      }
+      device [
+        RotationalMotor {
+          name "right_front_wheel"
+        }
+      ]
+      endPoint Solid {
+        translation -0.045999999999999944 0.07100000459849444 -0.015999979594168934
+        rotation 1 0 0 1.5707966142009597
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.0275
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -1.171759434370756e-06
+      }
+      device [
+        RotationalMotor {
+          name "left_rear_wheel"
+        }
+      ]
+      endPoint Solid {
+        translation 0.045999999999999944 -0.07100001874810122 -0.01599991680506916
+        rotation 1 0 0 1.5707951550354526
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.0275
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.597959950630363e-06
+      }
+      device [
+        RotationalMotor {
+          name "left_front_motor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.046000729149047154 -0.07100078921409332 -0.016049182135208718
+        rotation 0.999999999998793 -1.1072186239751573e-06 1.0901076626746385e-06 1.5700006166955291
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.0275
+            }
+          }
+        ]
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    DEF base Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.18 0.12 0.05
+      }
+    }
+  ]
+  name "SLRC"
+  boundingObject Box {
+    size 0.18 0.16 0.087
+  }
+  physics Physics {
+  }
+}
+  }

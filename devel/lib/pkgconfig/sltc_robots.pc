@@ -1,0 +1,8 @@
+prefix=/home/dulanjana/sltc_2023/devel
+
+Name: sltc_robots
+Description: Description of sltc_robots
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
