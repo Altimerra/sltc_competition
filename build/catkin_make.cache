@@ -1,2 +1,0 @@
-sltc_robots
--DCATKIN_DEVEL_PREFIX=/home/dulanjana/sltc_2023/devel -DCMAKE_INSTALL_PREFIX=/home/dulanjana/sltc_2023/install -G Unix Makefiles
